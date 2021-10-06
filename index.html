@@ -17,14 +17,16 @@
 
         <div id="charmandor"  class="hidden">
             <a href="http://pokemondb.net/pokedex/charmander"><img src="https://img.pokemondb.net/sprites/crystal/back-normal/charmander.png" alt="Charmander"></a>
-            
+            <audio id="red-sound" src="./pokemon-sprits/charmander.mp3"></audio>
         </div>
         <div id="squirtle"  class="hidden">
             <a href="http://pokemondb.net/pokedex/squirtle"><img src="https://img.pokemondb.net/sprites/crystal/back-normal/squirtle.png" alt="Squirtle"></a>
+            <audio id="blue-sound" src="./pokemon-sprits/squirtle.mp3"></audio>
         </div>
         
         <div id="bulbasaur" class="hidden">
             <a href="http://pokemondb.net/pokedex/bulbasaur"><img src="https://img.pokemondb.net/sprites/crystal/back-normal/bulbasaur.png" alt="Bulbasaur"></a>
+            <audio id="green-sound" src="./pokemon-sprits/bulbasaur.mp3"></audio>
         </div>
     </div>
     <h1>Choose your Pokemon</h1>
@@ -49,6 +51,15 @@
             <p>Bulbasaur</p>
         </label>
 
+        <label>
+            Wins:<span id="winning-count">0</span>
+        </label>
+        
+        <div>
+            <label>
+                Lose:<span id="losing-count">0</span>
+            </label>
+        </div>
       
     </div>
     <button id="battle-button">Battle</button>
