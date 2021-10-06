@@ -14,3 +14,7 @@ img{
     display: flex;
     
 }
+input[type=radio]:checked + img{
+scale: 120%;
+
+}
