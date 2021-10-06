@@ -36,7 +36,7 @@ export function checkWhoWon(player, computer){
     else if (player ==='green' && computer === 'red'){
         console.log('you loose')
         return 'you loose'
-    }else if (player === 'blue' && computer === 'blue'){
+    }else if (player === 'green' && computer === 'blue'){
         console.log('you win')
         return 'you win'
     }

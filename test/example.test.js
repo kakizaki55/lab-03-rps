@@ -24,3 +24,29 @@ test('charmador vs charzard', (expect) => {
 
     expect.equal(actual, expected);
 });
+test('ivysour vs charzard', (expect) => {
+
+    const expected ='you loose';
+    const actual = checkWhoWon('green', 'red');
+
+    expect.equal(actual, expected);
+});
+test('ivysour vs blastouse', (expect) => {
+
+    const expected ='you win';
+    const actual = checkWhoWon('green', 'blue');
+
+    expect.equal(actual, expected);
+});
+test('squital vs ivysour ', (expect) => {
+
+    const expected ='you loose';
+    const actual = checkWhoWon('blue', 'green');
+
+    expect.equal(actual, expected);
+});
+
+
+
+
+
