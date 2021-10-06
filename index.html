@@ -13,9 +13,25 @@
 </head>
 
 <body>
+    <div id="battle-field">
+
+        <div id="charmandor"  class="hidden">
+            <a href="http://pokemondb.net/pokedex/charmander"><img src="https://img.pokemondb.net/sprites/crystal/back-normal/charmander.png" alt="Charmander"></a>
+            
+        </div>
+        <div id="squirtle"  class="hidden">
+            <a href="http://pokemondb.net/pokedex/squirtle"><img src="https://img.pokemondb.net/sprites/crystal/back-normal/squirtle.png" alt="Squirtle"></a>
+        </div>
+        
+        <div id="bulbasaur" class="hidden">
+            <a href="http://pokemondb.net/pokedex/bulbasaur"><img src="https://img.pokemondb.net/sprites/crystal/back-normal/bulbasaur.png" alt="Bulbasaur"></a>
+        </div>
+    </div>
     <h1>Choose your Pokemon</h1>
 
+
     <div id="poke-ball-container">
+        
 
         <label >
             <input type="radio" name ="pokemon" id="charmandor" value="red">
@@ -32,9 +48,13 @@
             <img src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
             <p>Bulbasaur</p>
         </label>
-        
+
+      
     </div>
     <button id="battle-button">Battle</button>
+    <div id="game-text">
+        answer goes here 
+    </div>
 
     <script type="module" src="./app.js"></script>
 </body>

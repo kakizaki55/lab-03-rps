@@ -18,3 +18,10 @@ input[type=radio]:checked + img{
 scale: 120%;
 
 }
+.hidden{
+    display: none;
+}
+a {
+    width: 200px;
+    height: 200px;
+}
