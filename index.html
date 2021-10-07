@@ -32,39 +32,39 @@
         
         <div class="battle-field-left">
             <div id="charmandor"  class="hidden">
-                <a href="http://pokemondb.net/pokedex/charmander"><img src="https://img.pokemondb.net/sprites/crystal/back-normal/charmander.png" alt="Charmander"></a>
+                <a href="http://pokemondb.net/pokedex/charmander"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/charmander.gif" alt="Charmander"></a>
                 <audio id="red-sound" src="./pokemon-sprits/charmander.mp3"></audio>
             </div>
             <div id="squirtle"  class="hidden">
-                <a href="http://pokemondb.net/pokedex/squirtle"><img src="https://img.pokemondb.net/sprites/crystal/back-normal/squirtle.png" alt="Squirtle"></a>
+                <a href="http://pokemondb.net/pokedex/squirtle"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/squirtle.gif" alt="Squirtle"></a>
                 <audio id="blue-sound" src="./pokemon-sprits/squirtle.mp3"></audio>
             </div>
             
             <div id="bulbasaur" class="hidden">
-                <a href="http://pokemondb.net/pokedex/bulbasaur"><img src="https://img.pokemondb.net/sprites/crystal/back-normal/bulbasaur.png" alt="Bulbasaur"></a>
+                <a href="http://pokemondb.net/pokedex/bulbasaur"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/bulbasaur.gif" alt="Bulbasaur"></a>
                 <audio id="green-sound" src="./pokemon-sprits/bulbasaur.mp3"></audio>
             </div>
         </div>
-        <h1>Choose your Pokemon</h1>
     </div>
-
+    
+    <h1>Choose your Pokemon</h1>
 
     <div id="poke-ball-container">
         
 
         <label>
             <input type="radio" name ="pokemon" id="charmandor" value="red">
-            <img src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
+            <img class="pokeball" src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
             <p>Charmandor</p>
         </label>
         <label>
             <input type="radio" name ="pokemon" id="squirtle" value="blue">
-            <img src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
+            <img class="pokeball" src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
             <p>Squirtle</p>
         </label>
         <label>
             <input type="radio" name ="pokemon" id="bulbasaur" value="green">
-            <img src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
+            <img class="pokeball" src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
             <p>Bulbasaur</p>
         </label>
 
@@ -80,6 +80,7 @@
       
     </div>
     <button id="battle-button">Battle</button>
+    <button id="reset"> Runaway</button>
     <div id="game-text">
         answer goes here 
     </div>

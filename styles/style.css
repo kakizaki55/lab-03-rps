@@ -3,7 +3,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+    background-color:#1A2E20 ;
 }
 
 img{
@@ -13,6 +13,12 @@ img{
 #poke-ball-container{
     display: flex;
     
+}
+.pokeball{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    margin: 15px;
 }
 
 .hidden{
@@ -25,5 +31,11 @@ a {
 .battle-field-right{
 display: flex;
 justify-content: end;
+}
+.battle-field{
+    border: black 3px solid;
+    width: 350px;
+    height: 210px;
+    background-image: url(../pokemon-sprits/battle-field.png);
 }
 
