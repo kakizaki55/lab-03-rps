@@ -5,7 +5,7 @@ const test = QUnit.test;
 
 test('charmador vs blastoise', (expect) => {
 
-    const expected = 'you loose';
+    const expected = 'you lose';
     const actual = checkWhoWon('red', 'blue');
 
     expect.equal(actual, expected);
@@ -26,7 +26,7 @@ test('charmador vs charzard', (expect) => {
 });
 test('ivysour vs charzard', (expect) => {
 
-    const expected ='you loose';
+    const expected ='you lose';
     const actual = checkWhoWon('green', 'red');
 
     expect.equal(actual, expected);
@@ -40,7 +40,7 @@ test('ivysour vs blastouse', (expect) => {
 });
 test('squital vs ivysour ', (expect) => {
 
-    const expected ='you loose';
+    const expected ='you lose';
     const actual = checkWhoWon('blue', 'green');
 
     expect.equal(actual, expected);
