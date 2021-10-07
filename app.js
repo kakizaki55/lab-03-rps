@@ -90,3 +90,19 @@ const npcPokemon = randomPokemon()
 
 
 })
+resetButton.addEventListener('click', ()=>{
+    wincount =0;
+    losscount=0;
+    
+    loseCount.textContent = losscount;
+    winningCount.textContent =wincount;
+
+    blastoise.classList.add('hidden')
+    charizard.classList.add('hidden')
+    venusaur.classList.add('hidden')
+
+    squirtle.classList.add('hidden')
+    charmandor.classList.add('hidden')
+    bulbasaur.classList.add('hidden')
+
+})
