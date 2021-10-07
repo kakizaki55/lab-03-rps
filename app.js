@@ -23,6 +23,8 @@ const loseCount = document.getElementById('losing-count');
 let wincount =0;
 let losscount=0;
 
+const resetButton =document.getElementById('reset-button')
+
 
 battleButton.addEventListener('click', () => {
 // console.log('clickyclask')

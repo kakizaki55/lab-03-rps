@@ -4,6 +4,7 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color:#1A2E20 ;
+    font-family:monospace;
 }
 
 img{
@@ -38,4 +39,24 @@ justify-content: end;
     height: 210px;
     background-image: url(../pokemon-sprits/battle-field.png);
 }
+button{
+    border: solid black 3px;
+    background-color: yellowgreen;
+    margin: 20px;
+    border-radius: 10px;
+}
 
+#game-text{
+    background-color: white;
+    border: black solid 3px;
+    width: 350px;
+    height: 50px;
+
+}
+.game-text{
+    background-color: white;
+    border: black solid 3px;
+    width: 350px;
+    height: 50px;
+
+}
