@@ -18,6 +18,9 @@ const redSound = document.getElementById('red-sound');
 const blueSound = document.getElementById('blue-sound');
 const greenSound = document.getElementById('green-sound');
 
+const route1Audio = document.getElementById('route-1-audio');
+const battleAudio = document.getElementById('battle-audio');
+
 const winningCount = document.getElementById('winning-count');
 const loseCount = document.getElementById('losing-count');
 let wincount = 0;
@@ -25,13 +28,31 @@ let losscount = 0;
 
 const resetButton = document.getElementById('reset-button');
 
+function reduceVol(sound) {
+    sound.volume = 0.2;
+}
+    reduceVol(battleAudio);
+    reduceVol(route1Audio);
+    reduceVol(redSound);
+    reduceVol(blueSound);
+    reduceVol(greenSound);
+
+
 
 battleButton.addEventListener('click', () => {
 
     const selectedPokemon = document.querySelector('input[type=radio]:checked');
     const npcPokemon = randomPokemon();
 
+ 
+
+    battleAudio.play();
+    route1Audio.pause();
+
+
     gameText.textContent = checkWhoWon(selectedPokemon.value, npcPokemon.value);
+
+    
 
     if (selectedPokemon.value === 'red'){
         charmandor.classList.remove('hidden');
@@ -93,7 +114,9 @@ battleButton.addEventListener('click', () => {
 resetButton.addEventListener('click', ()=>{
     wincount = 0;
     losscount = 0;
-    
+
+    gameText.textContent = 'You got away safely!';
+
     loseCount.textContent = losscount;
     winningCount.textContent = wincount;
 
@@ -104,5 +127,9 @@ resetButton.addEventListener('click', ()=>{
     squirtle.classList.add('hidden');
     charmandor.classList.add('hidden');
     bulbasaur.classList.add('hidden');
+
+    route1Audio.play();
+    battleAudio.pause();
+
 
 });
