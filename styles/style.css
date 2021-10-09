@@ -15,6 +15,26 @@ img{
     display: flex;
     
 }
+
+#gameboy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    padding: 20px;
+    background-color: gold;
+    padding-bottom: 75px;
+    border-radius: 50px;
+}
+
+#screen {
+    border: rgb(43, 43, 43) 20px solid;
+    border-right: 30px solid rgb(43, 43, 43);
+    border-left: 30px solid rgb(43, 43, 43);
+    border-bottom: 30px solid rgb(43, 43, 43);
+    border-radius: 10px;
+}
+
 .pokeball{
     height: 50px;
     width: 50px;
@@ -34,7 +54,7 @@ display: flex;
 justify-content: end;
 }
 .battle-field{
-    border: black 3px solid;
+    
     width: 350px;
     height: 210px;
     background-image: url(../pokemon-sprits/battle-field.png);
@@ -51,6 +71,7 @@ button{
     border: black solid 3px;
     width: 350px;
     height: 50px;
+    
 
 }
 .game-text{

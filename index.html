@@ -13,81 +13,91 @@
 </head>
 
 <body>
-    <div class="battle-field">
+    <div id="gameboy">
+    <div id="screen">
+        <div class="battle-field">
 
-        <div class="battle-field-right">
-            <div id="charizard" class="hidden">
-                <a href="http://pokemondb.net/pokedex/charizard"><img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/charizard.png" alt="Charizard"></a>
-                
-            </div>
-            <div  id="blastoise" class="hidden">
-                <a href="http://pokemondb.net/pokedex/blastoise"><img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/blastoise.png" alt="Blastoise"></a>
-                
-            </div>
-            <div id="venusaur" class="hidden">
-                <a href="http://pokemondb.net/pokedex/venusaur"><img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/venusaur.png" alt="Venusaur"></a>
-                
-            </div>
-        </div>
-        
-        <div class="battle-field-left">
-            <div id="charmandor"  class="hidden">
-                <a href="http://pokemondb.net/pokedex/charmander"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/charmander.gif" alt="Charmander"></a>
-                <audio id="red-sound" src="./pokemon-sprits/charmander.mp3"></audio>
-            </div>
-            <div id="squirtle"  class="hidden">
-                <a href="http://pokemondb.net/pokedex/squirtle"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/squirtle.gif" alt="Squirtle"></a>
-                <audio id="blue-sound" src="./pokemon-sprits/squirtle.mp3"></audio>
+            <div class="battle-field-right">
+                <div id="charizard" class="hidden">
+                    <a href="http://pokemondb.net/pokedex/charizard"><img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/charizard.png" alt="Charizard"></a>
+                    
+                </div>
+                <div  id="blastoise" class="hidden">
+                    <a href="http://pokemondb.net/pokedex/blastoise"><img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/blastoise.png" alt="Blastoise"></a>
+                    
+                </div>
+                <div id="venusaur" class="hidden">
+                    <a href="http://pokemondb.net/pokedex/venusaur"><img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/venusaur.png" alt="Venusaur"></a>
+                    
+                </div>
             </div>
             
-            <div id="bulbasaur" class="hidden">
-                <a href="http://pokemondb.net/pokedex/bulbasaur"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/bulbasaur.gif" alt="Bulbasaur"></a>
-                <audio id="green-sound" src="./pokemon-sprits/bulbasaur.mp3"></audio>
+            <div class="battle-field-left">
+                <div id="charmandor"  class="hidden">
+                    <a href="http://pokemondb.net/pokedex/charmander"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/charmander.gif" alt="Charmander"></a>
+                    <audio id="red-sound" src="./pokemon-sprits/charmander.mp3"></audio>
+                </div>
+                <div id="squirtle"  class="hidden">
+                    <a href="http://pokemondb.net/pokedex/squirtle"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/squirtle.gif" alt="Squirtle"></a>
+                    <audio id="blue-sound" src="./pokemon-sprits/squirtle.mp3"></audio>
+                </div>
+                
+                <div id="bulbasaur" class="hidden">
+                    <a href="http://pokemondb.net/pokedex/bulbasaur"><img src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/bulbasaur.gif" alt="Bulbasaur"></a>
+                    <audio id="green-sound" src="./pokemon-sprits/bulbasaur.mp3"></audio>
+                </div>
             </div>
+            
         </div>
-    </div>
     
-    <h1>Choose your Pokemon</h1>
+   
 
-    <div id="poke-ball-container">
+ </div>    
+        <h1>Choose your Pokemon</h1>
+
+        <div id="poke-ball-container">
+            
+
+            <label>
+                <input type="radio" name ="pokemon" id="charmandor" value="red">
+                <img class="pokeball" src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
+                <p>Charmandor</p>
+            </label>
+            <label>
+                <input type="radio" name ="pokemon" id="squirtle" value="blue">
+                <img class="pokeball" src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
+                <p>Squirtle</p>
+            </label>
+            <label>
+                <input type="radio" name ="pokemon" id="bulbasaur" value="green">
+                <img class="pokeball" src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
+                <p>Bulbasaur</p>
+            </label>
+
+            
+        </div>
+        <button id="battle-button">Battle</button>
+        <button id="reset-button"> Runaway</button>
         
-
-        <label>
-            <input type="radio" name ="pokemon" id="charmandor" value="red">
-            <img class="pokeball" src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
-            <p>Charmandor</p>
-        </label>
-        <label>
-            <input type="radio" name ="pokemon" id="squirtle" value="blue">
-            <img class="pokeball" src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
-            <p>Squirtle</p>
-        </label>
-        <label>
-            <input type="radio" name ="pokemon" id="bulbasaur" value="green">
-            <img class="pokeball" src="./pokemon-sprits/pokeball.png" alt="a poke-ball">
-            <p>Bulbasaur</p>
-        </label>
-
         
+        <audio id="battle-audio"  type="audio/mp3" src="./assets/battle-theme.mp3"></audio>
+        <script type="module" src="./app.js"></script>
     </div>
-    <button id="battle-button">Battle</button>
-    <button id="reset-button"> Runaway</button>
-    <div id ="game-text">
-        you have encountered a wild pokemon!
-    </div>
-    <div class ="game-text">
-        <label>
-            Wins:<span id="winning-count">0</span>
-        </label>
-    </div>
-    
-    <div class="game-text">
-        <label>
-            Lose:<span id="losing-count">0</span>
-        </label>
-    </div>
-    
-    <script type="module" src="./app.js"></script>
+<div id ="game-text">
+            you have encountered a wild pokemon!
+        </div>
+        <div class ="game-text">
+            <label>
+                Wins:<span id="winning-count">0</span>
+            </label>
+        </div>
+        
+        <div class="game-text">
+            <label>
+                Lose:<span id="losing-count">0</span>
+            </label>
+        </div>
+        <audio id="route-1-audio" type="audio/mp3" src="./assets/Route-1.mp3" controls autoplay></audio>
 </body>
 
 </html>
