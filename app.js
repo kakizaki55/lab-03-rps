@@ -31,11 +31,11 @@ const resetButton = document.getElementById('reset-button');
 function reduceVol(sound) {
     sound.volume = 0.2;
 }
-    reduceVol(battleAudio);
-    reduceVol(route1Audio);
-    reduceVol(redSound);
-    reduceVol(blueSound);
-    reduceVol(greenSound);
+reduceVol(battleAudio);
+reduceVol(route1Audio);
+reduceVol(redSound);
+reduceVol(blueSound);
+reduceVol(greenSound);
 
 
 
